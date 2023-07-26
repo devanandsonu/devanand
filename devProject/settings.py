@@ -13,7 +13,7 @@ SECRET_KEY = 'django-insecure-s4(a0c@n%!@ql&0v+$2&taw1^%dy*%-eb++08t)x)gs^1&sqsa
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['swamidevanand.com', 'www.swamidevanand.com']
 
 
 # Application definition
