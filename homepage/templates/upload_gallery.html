@@ -1,0 +1,28 @@
+{% extends 'base.html '%}
+
+
+{% block css %}
+{% endblock %}
+
+
+<!-- content block code -->
+{% block content %}
+<div class="container">
+    <h1>Upload Images</h1>
+    <form method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        <select name="title_id">
+            {% for title in title %}
+            <option value="{{title.id}}">{{title.code}}</option>
+            {% endfor %}
+
+        </select>
+        <input type="file" name="image" multiple>
+        <button type="submit">Upload</button>
+    </form>
+  </div>
+{% endblock content %}
+
+<!-- javascript code -->
+{% block js %}
+{% endblock %}

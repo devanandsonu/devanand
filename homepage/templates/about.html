@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+
+{% block css %}
+<style>
+    .container {
+      padding: 20px;
+    }
+
+</style>
+{% endblock css %}
+
+{% block content %}
+
+<div class="container">
+    <div class="row mx-auto text-center">
+        <div class="col-lg-6 p-2">
+            <img alt="Company Logo" height="500px" src="{{about.image.url}}">
+        </div>
+
+        <div class="col-lg-6">
+            <h2 class="">About Us</h2>
+            <p style="text-align: justify;">{{about.desc}}</p>
+        </div>
+    </div>
+</div>
+
+{% endblock content %}
