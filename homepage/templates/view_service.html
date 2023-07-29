@@ -41,7 +41,7 @@
                 <div class="row text-center">
                     <div class="cart-item">
                         <h5><b>{{service.title}}</b></h5>
-                        <img alt="Cart Image 1" height="150" class="mb-3" src="{% service.image %}{{service.image.url}}{% endif %}">
+                        <img alt="Cart Image 1" class="img-fluid mb-3" src="{% if service.image %}{{service.image.url}}{% endif %}">
                         <p style="text-align:justify">{{service.desc}}</p>
                     </div>
                     <button class="btn btn-info p-1" onclick="history.back()">Go Back</button>

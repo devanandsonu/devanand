@@ -43,7 +43,7 @@
                         <div class="cart-item">
                             <h5>{{service.title}}</h5>
                             <a href="/view-service/{{service.id}}/">
-                                <img alt="Cart Image 1" class="img-fluid" src="{{service.image.url}}">
+                                <img alt="Cart Image 1" height="150" src="{% if service.image %}{{service.image.url}}{% endif %}">
                             </a>
                         </div>
                     </div>
