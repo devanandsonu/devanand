@@ -43,7 +43,7 @@
                         <div class="cart-item">
                             <a href="/view-gallery/{{title.id}}/">
                                 {% if title.poster %}
-                                <img alt="Cart Image 1" class="img-fluid" src="{{title.poster.url}}">
+                                <img alt="Cart Image 1" height="200" src="{% if title.poster%}{{title.poster.url}}{% endif %}">
                                 {% endif %}
                             </a>
                             <h5>{{title.code|title}}</h5>
