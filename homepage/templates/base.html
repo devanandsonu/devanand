@@ -90,7 +90,9 @@
 </nav>
 
 {% if header_banner %}
-<img src="{{header_banner.url}}" class="img-fluid mb-3">
+<div class="text-center">
+    <img src="{{header_banner.url}}" class="img-fluid mb-3">
+</div>
 {% endif %}
 
 {% block content %}
