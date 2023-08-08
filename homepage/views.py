@@ -17,19 +17,30 @@ def homepage(request):
     twitter = ''
     whatsapp = ''
     try:
-
         facebook = LookupField.objects.get(code='facebook')
         facebook = facebook.desc
+    except:
+        pass
 
+    try:
         youtube = LookupField.objects.get(code='youtube')
         youtube = youtube.desc
+    except:
+        pass
 
+    try:
         instagram = LookupField.objects.get(code='instagram')
         instagram = instagram.desc
+    except:
+        pass
 
+    try:
         twitter = LookupField.objects.get(code='twitter')
         twitter = twitter.desc
+    except:
+        pass
 
+    try:
         whatsapp = LookupField.objects.get(code='whatsapp')
         whatsapp = whatsapp.desc
     except:
@@ -66,16 +77,28 @@ def about(request):
     try:
         facebook = LookupField.objects.get(code='facebook')
         facebook = facebook.desc
+    except:
+        pass
 
+    try:
         youtube = LookupField.objects.get(code='youtube')
         youtube = youtube.desc
+    except:
+        pass
 
+    try:
         instagram = LookupField.objects.get(code='instagram')
         instagram = instagram.desc
+    except:
+        pass
 
+    try:
         twitter = LookupField.objects.get(code='twitter')
         twitter = twitter.desc
+    except:
+        pass
 
+    try:
         whatsapp = LookupField.objects.get(code='whatsapp')
         whatsapp = whatsapp.desc
     except:
@@ -110,16 +133,28 @@ def media_gallery(request):
     try:
         facebook = LookupField.objects.get(code='facebook')
         facebook = facebook.desc
+    except:
+        pass
 
+    try:
         youtube = LookupField.objects.get(code='youtube')
         youtube = youtube.desc
+    except:
+        pass
 
+    try:
         instagram = LookupField.objects.get(code='instagram')
         instagram = instagram.desc
+    except:
+        pass
 
+    try:
         twitter = LookupField.objects.get(code='twitter')
         twitter = twitter.desc
+    except:
+        pass
 
+    try:
         whatsapp = LookupField.objects.get(code='whatsapp')
         whatsapp = whatsapp.desc
     except:
@@ -161,16 +196,28 @@ def upload_gallery(request):
         try:
             facebook = LookupField.objects.get(code='facebook')
             facebook = facebook.desc
+        except:
+            pass
 
+        try:
             youtube = LookupField.objects.get(code='youtube')
             youtube = youtube.desc
+        except:
+            pass
 
+        try:
             instagram = LookupField.objects.get(code='instagram')
             instagram = instagram.desc
+        except:
+            pass
 
+        try:
             twitter = LookupField.objects.get(code='twitter')
             twitter = twitter.desc
+        except:
+            pass
 
+        try:
             whatsapp = LookupField.objects.get(code='whatsapp')
             whatsapp = whatsapp.desc
         except:
@@ -201,16 +248,28 @@ def view_gallery(request, id):
     try:
         facebook = LookupField.objects.get(code='facebook')
         facebook = facebook.desc
+    except:
+        pass
 
+    try:
         youtube = LookupField.objects.get(code='youtube')
         youtube = youtube.desc
+    except:
+        pass
 
+    try:
         instagram = LookupField.objects.get(code='instagram')
         instagram = instagram.desc
+    except:
+        pass
 
+    try:
         twitter = LookupField.objects.get(code='twitter')
         twitter = twitter.desc
+    except:
+        pass
 
+    try:
         whatsapp = LookupField.objects.get(code='whatsapp')
         whatsapp = whatsapp.desc
     except:
@@ -240,16 +299,28 @@ def view_service(request, id):
     try:
         facebook = LookupField.objects.get(code='facebook')
         facebook = facebook.desc
+    except:
+        pass
 
+    try:
         youtube = LookupField.objects.get(code='youtube')
         youtube = youtube.desc
+    except:
+        pass
 
+    try:
         instagram = LookupField.objects.get(code='instagram')
         instagram = instagram.desc
+    except:
+        pass
 
+    try:
         twitter = LookupField.objects.get(code='twitter')
         twitter = twitter.desc
+    except:
+        pass
 
+    try:
         whatsapp = LookupField.objects.get(code='whatsapp')
         whatsapp = whatsapp.desc
     except:
