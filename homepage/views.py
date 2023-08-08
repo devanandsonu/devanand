@@ -11,6 +11,11 @@ def homepage(request):
     header_banner = header_banner.image
 
     #social links
+    facebook = ''
+    youtube = ''
+    instagram = ''
+    twitter = ''
+    whatsapp = ''
     try:
 
         facebook = LookupField.objects.get(code='facebook')
@@ -53,8 +58,12 @@ def about(request):
     about = LookupField.objects.get(code='about')
 
     #social links
+    facebook = ''
+    youtube = ''
+    instagram = ''
+    twitter = ''
+    whatsapp = ''
     try:
-
         facebook = LookupField.objects.get(code='facebook')
         facebook = facebook.desc
 
@@ -93,8 +102,12 @@ def media_gallery(request):
     image_title = MediaGallery.objects.all()
 
     #social links
+    facebook = ''
+    youtube = ''
+    instagram = ''
+    twitter = ''
+    whatsapp = ''
     try:
-
         facebook = LookupField.objects.get(code='facebook')
         facebook = facebook.desc
 
@@ -140,24 +153,28 @@ def upload_gallery(request):
         title = MediaGallery.objects.all()
 
         #social links
-    try:
+        facebook = ''
+        youtube = ''
+        instagram = ''
+        twitter = ''
+        whatsapp = ''
+        try:
+            facebook = LookupField.objects.get(code='facebook')
+            facebook = facebook.desc
 
-        facebook = LookupField.objects.get(code='facebook')
-        facebook = facebook.desc
+            youtube = LookupField.objects.get(code='youtube')
+            youtube = youtube.desc
 
-        youtube = LookupField.objects.get(code='youtube')
-        youtube = youtube.desc
+            instagram = LookupField.objects.get(code='instagram')
+            instagram = instagram.desc
 
-        instagram = LookupField.objects.get(code='instagram')
-        instagram = instagram.desc
+            twitter = LookupField.objects.get(code='twitter')
+            twitter = twitter.desc
 
-        twitter = LookupField.objects.get(code='twitter')
-        twitter = twitter.desc
-
-        whatsapp = LookupField.objects.get(code='whatsapp')
-        whatsapp = whatsapp.desc
-    except:
-        pass
+            whatsapp = LookupField.objects.get(code='whatsapp')
+            whatsapp = whatsapp.desc
+        except:
+            pass
         context = {
             'site_logo':site_logo,
             # 'header_banner':header_banner,
@@ -176,8 +193,12 @@ def view_gallery(request, id):
     images = MediaImages.objects.filter(media_id_id=id)
 
     #social links
+    facebook = ''
+    youtube = ''
+    instagram = ''
+    twitter = ''
+    whatsapp = ''
     try:
-
         facebook = LookupField.objects.get(code='facebook')
         facebook = facebook.desc
 
@@ -211,8 +232,12 @@ def view_service(request, id):
     service = Service.objects.get(id=id)
 
     #social links
+    facebook = ''
+    youtube = ''
+    instagram = ''
+    twitter = ''
+    whatsapp = ''
     try:
-
         facebook = LookupField.objects.get(code='facebook')
         facebook = facebook.desc
 
