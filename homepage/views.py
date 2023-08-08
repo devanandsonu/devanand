@@ -10,6 +10,12 @@ def homepage(request):
     header_banner = LookupField.objects.get(code='header_banner')
     header_banner = header_banner.image
 
+    try:
+        main_video = LookupField.objects.get(code='main-video')
+        main_video = main_video.desc
+    except:
+        pass
+
     #social links
     facebook = ''
     youtube = ''
@@ -50,6 +56,7 @@ def homepage(request):
     service = Service.objects.all().order_by('-id')
     context = {
         'site_logo':site_logo,
+        'main_video':main_video,
         'header_banner':header_banner,
         'service':service,
         'facebook':facebook,
