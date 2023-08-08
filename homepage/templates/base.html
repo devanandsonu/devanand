@@ -27,6 +27,13 @@
       -webkit-background-clip: text;
     }
 
+    .fa-whatsapp  {
+      color:#fff;
+      background:
+       linear-gradient(#25d366,#25d366) 14% 84%/16% 16% no-repeat,
+       radial-gradient(#25d366 60%,transparent 0);
+    }
+
     .floating-button-div {
       position: fixed;
       top: 40%;
@@ -91,21 +98,24 @@
 {% endblock content %}
 
 <div class="floating-button-div">
-    <a class="facebook-button" href="https://www.facebook.com/Swami-Devanand-114810558361394" target="_blank">
+    <a class="facebook-button" href="{{facebook}}" target="_blank">
         <i class="blue-color fa fa-facebook-f facebook" style="font-size:24px"></i><br/>
     </a>
 
-    <a class="facebook-button" href="https://www.instagram.com/swami_devanand88/"
+    <a class="facebook-button" href="{{instagram}}"
        target="_blank">
         <i class="fa fa-instagram" style="font-size:24px"></i><br/>
     </a>
 
-    <a class="facebook-button" href="https://www.youtube.com/channel/UCV7QxbX4bfL3xGAMgI6O0Dw" target="_blank">
+    <a class="facebook-button" href="{{youtube}}" target="_blank">
         <i class="fa fa-youtube-play" style="font-size:24px;color:red"></i></br>
     </a>
 
-    <a class="facebook-button" href="https://twitter.com/SwamiS82918" target="_blank">
+    <a class="facebook-button" href="{{twitter}}" target="_blank">
         <i class="blue-color fa fa-twitter" style="font-size:24px"></i><br/>
+    </a>
+    <a class="facebook-button" href="{{whatsapp}}" target="_blank">
+        <i class="blue-color fa fa-whatsapp" style="font-size:24px"></i><br/>
     </a>
 </div>
 
